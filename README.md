@@ -14,3 +14,5 @@ crud atau create , read , update , delete yang dimana projek ini menggunakan tek
 <li>Boostrap</li>
 </ul>
 </p>
+
+<p>Terima kasih :)</p>
