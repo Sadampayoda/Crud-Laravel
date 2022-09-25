@@ -15,4 +15,10 @@ crud atau create , read , update , delete yang dimana projek ini menggunakan tek
 </ul>
 </p>
 
+
+<p>Untuk database pada project saya itu hanya menggunakan table cruds , dikarenakan diproject saya tidak menggunakan sistem login sehingga tabel users pada gambar tidak digunakan atau data kosong</p>
+<img src="/image/database.jpeg">
+
+
 <p>Terima kasih :)</p>
+
