@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('name')->unique();
             $table->string('slug');
             $table->string('judul');
-            $table->string('deskripsi');
+            $table->text('deskripsi');
         });
     }
 

@@ -16,4 +16,5 @@ use App\Http\Controllers\CrudController;
 */
 
 Route::get('/',[CrudController::class,'home']);
-Route::get('/{slug}',[CrudController::class,'detil']);
+Route::get('/detil/{slug}',[CrudController::class,'detil']);
+Route::get('/create',[CrudController::class,'CreateData']);

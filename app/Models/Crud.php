@@ -10,4 +10,8 @@ class Crud extends Model
 {
     protected $guarded = ['id'];
     use HasFactory;
+
+    public static function ProccesCreateData(){
+        return 'tes';
+    }
 }

@@ -19,4 +19,11 @@ class CrudController extends Controller
             'data' => crud::firstWhere('slug',$slug)
         ]);
     }
+    public function CreateData()
+    {
+        return view("conten.create",[
+            'page' => 'Halaman Create Data',
+            'data' => Crud::ProccesCreateData()
+        ]);
+    }
 }
