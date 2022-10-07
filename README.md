@@ -20,5 +20,17 @@ crud atau create , read , update , delete yang dimana projek ini menggunakan tek
 <img src="/image/database.jpeg">
 
 
+<h1>1. Search</h1>
+<p>search pada aplikasi disini mencari sebuat title user </p>
+
+<p>Ketika Search ditemukan maka akan muncul title yang sesuai dengan input search</p>
+<img src="/image/search-true.png">
+
+
+<p>Ketika Search tidak ditemukan maka data akan kosong dan memunculkan keterangan</p>
+<img src="/image/search-false.png">
+
+
+
 <p>Terima kasih :)</p>
 

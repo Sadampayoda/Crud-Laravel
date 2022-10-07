@@ -7,10 +7,11 @@
         </div>
     </div>
     <div class="row">
-        <form >
+        <form method="POST" action="">
+            @csrf
             <div class="col-5 mb-3 mt-3">
                 <label for="name" class="form-label">Nama</label>
-                <input type="text" id="name" class="form-control">
+                <input type="text" name="name" id="name" class="form-control">
             </div>
             <div class="col-5 mb-3 mt-3">
                 <label for="judul" class="form-label">judul</label>
@@ -21,8 +22,10 @@
                 <input type="text" id="deskripsi" class="form-control">
             </div>
             <div class="d-grid col-5 mb-3 mt-3">
-                <button type="submit" class="btn btn-outline-dark">Create data</button>
+                <button type="submit"name="Create" class="btn btn-outline-dark">Create data</button>
             </div>
         </form>
     </div>
+
+    
 @endsection
