@@ -15,7 +15,7 @@ class CrudSeeder extends Seeder
      */
     public function run()
     {
-        Crud::factory(10)->create();
+        Crud::factory(20)->create();
 
        
     }

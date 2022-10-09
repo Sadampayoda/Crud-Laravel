@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CrudController;
-use App\Http\Controllers\SearchController;
+use App\Http\Controllers\DataController;
 
 
 /*
@@ -15,7 +15,7 @@ use App\Http\Controllers\SearchController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/',[CrudController::class,'home']);
-Route::get('/detil/{slug}',[CrudController::class,'detil']);
-Route::get('/create',[CrudController::class,'CreateData']);
+Route::get('/',[CrudController::class,'index']);
+Route::resource(
+    "/crud" , DataController::class
+);

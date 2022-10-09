@@ -1,6 +1,35 @@
 @extends('templete.html')
 
 @section('conten')
+    @if(session()->has('success'))
+        <div class="row mt-4">
+            <div class="col border rounded text-center">
+                <h1 class="text-success">
+                    {{session('success')}}
+                </h1>
+            </div>
+        </div>
+    @endif
+    @if (session()->has('destroy'))
+        <div class="row mt-4">
+            <div class="col border rounded text-center">
+                <h1 class="text-success">
+                    {{session('destroy')}}
+                </h1>
+            </div>
+        </div>
+    @endif
+    @if (session()->has('update'))
+        <div class="row mt-4">
+            <div class="col border rounded text-center">
+                <h1 class="text-success">
+                    {{session('update')}}
+                </h1>
+            </div>
+        </div>
+    @endif
+    
+    
     <div class="row mt-4 border-bottom">
         <div class="col">
             <h1>Notes about
@@ -32,7 +61,8 @@
                 <div class="col p-4 border border-1 shadow rounded-3">
                     <h3> {{ $result->judul }} </h3>
                     <p style="color: #bbb" >{{$result->deskripsi }} </p>
-                    <a class="btn btn-outline-dark" href="/detil/{{$result->slug}} ">Lihat detail</a>
+                    <a class="btn btn-outline-dark" href="/crud/{{$result->slug}}" >Lihat detail</a>
+                    
                 </div>
             </div>
         @endforeach
